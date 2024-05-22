@@ -79,7 +79,8 @@ header {
 }
 
 @media screen and (min-width: 800px) {
-  .mobile-menu-toggle {
+  .mobile-menu-toggle,
+  .mobile-menu-close {
     display: none;
   }
 }
