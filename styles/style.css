@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop-menu ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.gallery .main-image {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 799px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .mobile-menu {
+    display: none;
+  }
+}
