@@ -1,6 +1,16 @@
+body {
+  margin: 0;
+}
+
 header {
+  height: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrap {
+  padding-left: 15px;
 }
 
 .desktop-menu ul {
@@ -8,13 +18,41 @@ header {
   list-style-type: none;
 }
 
+.account-icons {
+  display: flex;
+}
+
 .gallery .main-image {
   max-width: 100%;
 }
 
+@media screen and (max-width: 350px) {
+  .logo {
+    max-width: 70%;
+  }
+}
+
 @media screen and (max-width: 799px) {
+  .logo {
+    margin-left: 15px;
+  }
+
   .desktop-menu {
     display: none;
+  }
+
+  .account-icons {
+    margin-right: 15px;
+    justify-content: end;
+  }
+
+  .cart-icon {
+    margin-bottom: 7px;
+  }
+
+  .profile-icon {
+    max-width: 25%;
+    margin-left: 20px;
   }
 }
 
