@@ -1,18 +1,31 @@
+import React from "react";
 import Logo from "../../images/logo.svg";
 import CartIcon from "../../images/icon-cart.svg";
 import ProfileIcon from "../../images/image-avatar.png";
 import "./HeaderStyles.css";
 
 function Header() {
+  const [menuVisibility, setVisibility] = React.useState(false);
+
+  const toggleMenu = () => {
+    setVisibility(!menuVisibility ? true : false);
+  };
+
+  const closeMenu = () => {
+    setVisibility(false);
+  };
+
   return (
     <header>
       <div className="logo-wrap">
-        <button className="mobile-menu-toggle"></button>
+        <button onClick={toggleMenu} className="mobile-menu-toggle"></button>
         <img className="logo" src={Logo} alt="site logo" />
       </div>
 
-      <nav className="primary-menu" data-visible="false">
-        <button className="mobile-menu-close"></button>
+      <nav
+        className={`primary-menu ${menuVisibility ? "active" : "non-active"}`}
+      >
+        <button onClick={closeMenu} className="mobile-menu-close"></button>
         <ul>
           <li>
             <a
