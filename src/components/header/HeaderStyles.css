@@ -14,6 +14,14 @@ header {
   list-style-type: none;
 }
 
+.primary-menu ul a {
+  color: hsl(0, 0%, 0%);
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
 .account-icons {
   display: flex;
 }
@@ -76,11 +84,13 @@ header {
   }
 
   .cart-icon {
-    margin-bottom: 5px;
+    margin: 7px 0;
   }
 
   .profile-icon {
-    max-width: 25%;
+    /* max-width: 25%; */
+    width: 31px;
+    height: 30px;
     margin-left: 20px;
   }
 }
