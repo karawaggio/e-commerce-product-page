@@ -1,0 +1,14 @@
+.attribution {
+  margin: 30px;
+  text-align: center;
+  font-size: 11px;
+  color: hsl(219, 9%, 45%);
+}
+
+.attribution a {
+  color: hsl(219, 9%, 45%);
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
