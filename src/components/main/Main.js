@@ -19,21 +19,27 @@ function Main() {
           Featuring a durable rubber outer sole, they’ll withstand everything
           the weather can offer.
         </p>
-        <div className="current-price">
-          <span>$125.00</span>
-          <span className="discount">50%</span>
-        </div>
-        <div className="old-price">
-          <span>$250.00</span>
-        </div>
-        <div className="quantity-btn">
-          <img src={PlusIcon} alt="plus icon" />
-          0
-          <img src={MinusIcon} alt="minus icon" />
-        </div>
-        <div className="cart-btn">
+        <section className="price-wrap">
+          <div>
+            <span className="current-price">$125.00</span>
+            <span className="discount">50%</span>
+          </div>
+          <div className="old-price">
+            <span>$250.00</span>
+          </div>
+        </section>
+        <section className="quantity-btn">
+          <span>
+            <img src={MinusIcon} alt="minus icon" />
+          </span>
+          <span>0</span>
+          <span>
+            <img src={PlusIcon} alt="plus icon" />
+          </span>
+        </section>
+        <section className="cart-btn">
           <img src={CartIcon} alt="cart icon" /> Add to cart
-        </div>
+        </section>
       </section>
     </main>
   );
