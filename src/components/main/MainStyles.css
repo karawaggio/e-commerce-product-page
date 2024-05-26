@@ -96,3 +96,13 @@
     margin-left: 20px;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  main {
+    margin: 50px auto;
+    width: 80%;
+  }
+  .product-desc {
+    margin: 50px;
+  }
+}
