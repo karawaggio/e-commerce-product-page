@@ -28,17 +28,19 @@ function Main() {
             <span>$250.00</span>
           </div>
         </section>
-        <section className="quantity-btn">
-          <span>
-            <img src={MinusIcon} alt="minus icon" />
-          </span>
-          <span>0</span>
-          <span>
-            <img src={PlusIcon} alt="plus icon" />
-          </span>
-        </section>
-        <section className="cart-btn">
-          <img src={CartIcon} alt="cart icon" /> Add to cart
+        <section className="buttons-wrap">
+          <div className="quantity-btn">
+            <span>
+              <img src={MinusIcon} alt="minus icon" />
+            </span>
+            <span>0</span>
+            <span>
+              <img src={PlusIcon} alt="plus icon" />
+            </span>
+          </div>
+          <div className="cart-btn">
+            <img src={CartIcon} alt="cart icon" /> Add to cart
+          </div>
         </section>
       </section>
     </main>

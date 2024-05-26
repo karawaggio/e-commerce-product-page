@@ -69,3 +69,30 @@
 .gallery .main-image {
   max-width: 100%;
 }
+
+@media screen and (min-width: 700px) {
+  main {
+    display: flex;
+    margin: 30px;
+  }
+
+  section.gallery img {
+    border-radius: 10px;
+  }
+
+  .buttons-wrap {
+    display: flex;
+  }
+
+  .quantity-btn {
+    width: 35%;
+  }
+
+  .cart-btn {
+    width: 60%;
+  }
+
+  .cart-btn {
+    margin-left: 20px;
+  }
+}
