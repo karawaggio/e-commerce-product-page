@@ -1,16 +1,14 @@
 import React from "react";
+import Slider from "./imageSlider/Slider";
 import CartIcon from "../../images/icon-cart.svg";
 import PlusIcon from "../../images/icon-plus.svg";
 import MinusIcon from "../../images/icon-minus.svg";
-import MainProductImg from "../../images/image-product-1.jpg";
 import "./MainStyles.css";
 
 function Main() {
   return (
     <main>
-      <section className="gallery">
-        <img className="main-image" src={MainProductImg} alt="product image" />
-      </section>
+      <Slider />
       <section className="product-desc">
         <div className="breadcrumbs">Sneaker Company</div>
         <h1>Fall Limited Edition Sneakers</h1>
