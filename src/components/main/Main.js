@@ -1,46 +1,13 @@
 import React from "react";
 import Slider from "./imageSlider/Slider";
-import CartIcon from "../../images/icon-cart.svg";
-import PlusIcon from "../../images/icon-plus.svg";
-import MinusIcon from "../../images/icon-minus.svg";
+import Product from "./Product";
 import "./MainStyles.css";
 
 function Main() {
   return (
     <main>
       <Slider />
-      <section className="product-desc">
-        <div className="breadcrumbs">Sneaker Company</div>
-        <h1>Fall Limited Edition Sneakers</h1>
-        <p>
-          These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they’ll withstand everything
-          the weather can offer.
-        </p>
-        <section className="price-wrap">
-          <div>
-            <span className="current-price">$125.00</span>
-            <span className="discount">50%</span>
-          </div>
-          <div className="old-price">
-            <span>$250.00</span>
-          </div>
-        </section>
-        <section className="buttons-wrap">
-          <div className="quantity-btn">
-            <span>
-              <img src={MinusIcon} alt="minus icon" />
-            </span>
-            <span>0</span>
-            <span>
-              <img src={PlusIcon} alt="plus icon" />
-            </span>
-          </div>
-          <div className="cart-btn">
-            <img src={CartIcon} alt="cart icon" /> Add to cart
-          </div>
-        </section>
-      </section>
+      <Product />
     </main>
   );
 }
